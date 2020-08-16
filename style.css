@@ -108,14 +108,13 @@ label[for="hamburger"] {
   .logo {
     font-size: 2em;
     margin: 0;
-    text-align: center;
   }
 
   header {
     flex-wrap: wrap;
     padding: 0;
     justify-content: space-between;
-    height: 2.5em;
+    height: 3em;
     align-items: center;
   
   }
@@ -138,7 +137,7 @@ label[for="hamburger"] {
   
   input[type="checkbox"]:checked + nav {
     transition: transform 0.35s;
-    transform: translateY(2.5em);
+    transform: translateY(3em);
         
   }
 
@@ -146,7 +145,9 @@ label[for="hamburger"] {
     z-index: 1;
     background: var(--scnd-bg-clr);
     flex-grow: 1;
-    
+    min-height: 100%;
+    padding-left: .25em;
+    line-height: 1.5;
   }
 
   label[for="hamburger"] {
@@ -155,7 +156,5 @@ label[for="hamburger"] {
     padding: 0 1em;
     z-index: 1;
     height: 100%;
-    line-height: 2.5em;
-    
-
+    line-height: 3em;
   }
