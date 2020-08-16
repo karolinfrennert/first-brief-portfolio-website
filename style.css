@@ -1,0 +1,161 @@
+:root {
+ 
+  --main-bg-clr: white ;
+  --scnd-bg-clr: #534278;
+  --main-txt-clr: #1a1525;
+  --scnd-txt-clr: #e9e1f1;
+  --cta: #f0da53;
+  --txt-font: 'Montserrat', sans-serif;
+  --heading-font: 'Caveat', cursive;
+
+}
+
+body {
+  background-color: var(--main-bg-clr);
+  color: var(--main-txt-clr);
+  margin: 0;
+  font-family: var(--txt-font);
+  
+}
+
+header {
+  background-color: var(--scnd-bg-clr);
+  color: var(--scnd-txt-clr);
+  display: flex;
+  position: sticky;
+  padding: 1em;
+  top: 0; 
+  font-family: var(--heading-font);
+  align-items: baseline;
+  
+  
+}
+
+button {
+ background-color: var(--cta);
+ padding: 0.75em;
+ margin: 1em;
+ color: var(--main-txt-clr);
+ border: 1px solid var(--main-txt-clr);
+ font-weight: 700;
+ text-transform: uppercase;
+ border-radius: 0.75em;
+ font-family: var(--txt-font);
+ 
+}
+
+button:hover {
+  transition: all 0.3s;
+  background-color: var(--scnd-bg-clr);
+  color: var(--scnd-txt-clr);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+main {
+  height: 1200px;
+  margin-top: 3em;
+}
+
+footer {
+  background-color: var(--scnd-bg-clr);
+  text-align: center;
+  padding: 1.5em;
+  
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--scnd-txt-clr);
+  padding: 1.5em;
+  font-size: 2em;
+  
+}
+
+a:hover {
+  color: var(--cta);
+}
+
+#hamburger {
+  display: none;
+}
+
+label[for="hamburger"] {
+  display: none;
+}
+
+.logo {
+  font-size: 4em;
+  font-weight: 400;
+}
+
+.box {
+  color: var(--main-txt-clr);
+  padding:1em;
+}
+
+.container {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  height: auto;
+}
+
+@media screen and (max-width:62em) {
+  p {
+    min-width: 50%;
+  }
+  .logo {
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+  }
+
+  header {
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+    height: 2.5em;
+    align-items: center;
+  
+  }
+
+  nav {
+    min-width: 100%;
+    transform: translateY(-13em);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    left: 0;
+    top: 0;
+ 
+  }
+
+  nav a {
+    padding: 0.1em;
+  }
+  
+  input[type="checkbox"]:checked + nav {
+    transition: transform 0.35s;
+    transform: translateY(2.5em);
+        
+  }
+
+  h1 {
+    z-index: 1;
+    background: var(--scnd-bg-clr);
+    flex-grow: 1;
+    
+  }
+
+  label[for="hamburger"] {
+    display: block;
+    background: var(--scnd-bg-clr);
+    padding: 0 1em;
+    z-index: 1;
+    height: 100%;
+    line-height: 2.5em;
+    
+
+  }
