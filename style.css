@@ -1,3 +1,12 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 :root {
  
   --main-bg-clr: white ;
@@ -11,10 +20,11 @@
 }
 
 body {
-  background-color: var(--main-bg-clr);
+  background: linear-gradient(110deg, var(--main-bg-clr), var(--scnd-txt-clr));
   color: var(--main-txt-clr);
   margin: 0;
   font-family: var(--txt-font);
+  
   
 }
 
@@ -25,7 +35,7 @@ header {
   position: sticky;
   padding: 1em;
   top: 0; 
-  font-family: var(--heading-font);
+  font-family: var(--txt-font);
   align-items: baseline;
   
   
@@ -52,7 +62,7 @@ button:hover {
 }
 
 main {
-  height: 1200px;
+  height: auto;
   margin-top: 3em;
 }
 
@@ -67,8 +77,8 @@ footer {
 a {
   text-decoration: none;
   color: var(--scnd-txt-clr);
-  padding: 1.5em;
-  font-size: 2em;
+  padding: 0 1.5em;
+  font-size: 1.5em;
   
 }
 
@@ -84,22 +94,73 @@ label[for="hamburger"] {
   display: none;
 }
 
+img {
+  width: 100%;
+}
+
+button {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.headerFlex {
+  display: flex;
+}
+
+.topNav {
+justify-content: flex-end;
+
+}
+
+.mySlides {
+  padding: 1em 0;
+}
+
 .logo {
-  font-size: 4em;
-  font-weight: 400;
+  font-size: 5em;
+  font-family: var(--heading-font);
+  padding-right: 1em;
 }
 
 .box {
   color: var(--main-txt-clr);
   padding:1em;
+  text-align: center;
 }
 
 .container {
+  
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  
+  /*
+  flexbox layout
+
   display:flex;
   flex-wrap:wrap;
   flex-direction:column;
-  height: auto;
+  height: auto;*/
 }
+/*
+.bookContainer {
+  display: flex;
+  flex: wrap;
+  padding: 1em;
+  width: auto ;
+}*/
+
+.footerFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.intro {
+  text-align: center;
+  padding: 2em 1em;
+  
+}
+
 
 @media screen and (max-width:62em) {
   p {
@@ -141,7 +202,7 @@ label[for="hamburger"] {
         
   }
 
-  h1 {
+  .logo {
     z-index: 1;
     background: var(--scnd-bg-clr);
     flex-grow: 1;
@@ -157,4 +218,9 @@ label[for="hamburger"] {
     z-index: 1;
     height: 100%;
     line-height: 3em;
+  }
+
+  .container {
+    display: grid;
+    grid-template-rows: auto auto auto;
   }
