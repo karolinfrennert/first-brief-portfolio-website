@@ -1,11 +1,10 @@
 * {
   margin: 0px;
   padding: 0px;
-}
-
-html {
   box-sizing: border-box;
 }
+
+
 
 :root {
  
@@ -24,8 +23,7 @@ body {
   color: var(--main-txt-clr);
   margin: 0;
   font-family: var(--txt-font);
-  
-  
+    
 }
 
 header {
@@ -129,12 +127,14 @@ button {
   color: var(--main-txt-clr);
   padding:1em;
   text-align: center;
+  
 }
 
 .container {
   
   display: grid;
   grid-template-columns: auto auto auto ;
+  
   
   /*
   flexbox layout
@@ -235,7 +235,18 @@ button {
   .container {
     display: grid;
     grid-template-rows: auto auto auto;
-  }
+   }
+
+   
+   .box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   }
+
+   
+
+   
 
 
 
