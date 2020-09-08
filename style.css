@@ -37,9 +37,15 @@ header {
   top: 0; 
   font-family: var(--txt-font);
   align-items: baseline;
-  
-  
+  justify-content: space-evenly;
+   
 }
+.topNav {
+  padding: 0 1.5em;
+  font-size: 1.5em;
+}
+
+
 
 button {
  background-color: var(--cta);
@@ -77,9 +83,7 @@ footer {
 a {
   text-decoration: none;
   color: var(--scnd-txt-clr);
-  padding: 0 1.5em;
-  font-size: 1.5em;
-  
+   
 }
 
 a:hover {
@@ -105,12 +109,11 @@ button {
 
 .headerFlex {
   display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.topNav {
-justify-content: flex-end;
 
-}
 
 .mySlides {
   padding: 1em 0;
@@ -153,12 +156,21 @@ justify-content: flex-end;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 1.5em;
+  font-size: 1.5em;
+  justify-content: space-evenly;
 }
 
 .intro {
   text-align: center;
   padding: 2em 1em;
   
+}
+
+/* Styling for the Work page */
+
+.workAbout {
+  padding: 1em 0;
 }
 
 
@@ -224,3 +236,8 @@ justify-content: flex-end;
     display: grid;
     grid-template-rows: auto auto auto;
   }
+
+
+
+  
+
