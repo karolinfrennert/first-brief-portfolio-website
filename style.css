@@ -13,6 +13,7 @@
   --main-txt-clr: #1a1525;
   --scnd-txt-clr: #e9e1f1;
   --cta: #f0da53;
+  --scnd-cta: #4c3856;
   --txt-font: 'Montserrat', sans-serif;
   --heading-font: 'Caveat', cursive;
 
@@ -23,7 +24,9 @@ body {
   color: var(--main-txt-clr);
   margin: 0;
   font-family: var(--txt-font);
-    
+  min-height: 100vh;
+ display: grid;  
+ grid-template-rows: 5em 1fr 5em ; 
 }
 
 header {
@@ -36,13 +39,10 @@ header {
   font-family: var(--txt-font);
   align-items: baseline;
   justify-content: space-evenly;
-  height: fit-content;
+  
    
 }
-.topNav {
-  padding: 0 1.5em;
-  font-size: 1.5em;
-}
+
 
 
 
@@ -69,12 +69,14 @@ button:hover {
 main {
   height: auto;
   margin-top: 3em;
+  height: 1fr;
 }
 
 footer {
   background-color: var(--scnd-bg-clr);
   text-align: center;
   padding: 1.5em;
+  height: 5em;
   
 }
 
@@ -104,6 +106,21 @@ img {
 button {
   text-align: center;
   margin-top: 1em;
+}
+
+.topNav {
+  padding: 0 1.5em;
+  font-size: 1.5em;
+}
+
+.cta a {
+  color: var(--scnd-cta)
+}
+
+.img-fit {
+  width: 100%;
+  height: 30em;
+  object-fit: contain;
 }
 
 .headerFlex {
