@@ -250,7 +250,7 @@ button {
 
   .container {
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
    }
 
    
@@ -259,7 +259,7 @@ button {
     flex-wrap: wrap;
     flex-direction: column;
    }
-
+  
    
 
    
